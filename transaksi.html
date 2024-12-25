@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi Penjualan UMKM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+    
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: orange;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PESANAN ORDER</h1>
+        <form id="salesForm">
+            <label for="productName">Nama Produk:</label>
+            <input type="text" id="productName" name="productName" required>
+
+            <label for="quantity">Jumlah perseat:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <label for="price">Harga Satuan:</label>
+            <input type="number" id="price" name="price" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('salesForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const productName = document.getElementById('productName').value;
+            const quantity = document.getElementById('quantity').value;
+            const price = document.getElementById('price').value;
+            const total = quantity * price;
+
+            alert(`Produk: ${productName}\nJumlah: ${quantity}\nHarga Satuan: ${price}\nTotal Harga: ${total}`);
+        });
+    </script>
+    <div>
+        <!-- Tombol Home -->
+        <a href="index.html" class="home-btn fade-in">Go to Home</
+    </div>
+</body>
+</html>
