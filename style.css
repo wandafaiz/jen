@@ -6,11 +6,20 @@
 }
 body{
     height: 100vh;
-    background-color: #000;
-    background-image: url(jen1.jpeg);
-    background-size: 500px;
-    background-position: center;
+    padding: 10px 30px;
+    background: url('jen1.jpeg') no-repeat center center/cover; /* Gambar diatur memenuhi layar */
+    background-size: cover; /* Memastikan gambar memenuhi seluruh area */
+    color: #1f1e1e;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh; /* Memastikan tinggi section sama dengan tinggi viewport */
+    box-sizing: border-box;
 }
+img {
+    max-width: 100%;
+    height: auto;
+  }
 li{
     list-style: none;
 
