@@ -6,7 +6,7 @@
 }
 body{
     height: 100vh;
-    padding: 10px 30px;
+    padding: 80px 40px;
     background: url('jen1.jpeg') no-repeat center center/cover; /* Gambar diatur memenuhi layar */
     background-size: cover; /* Memastikan gambar memenuhi seluruh area */
     color: #1f1e1e;
